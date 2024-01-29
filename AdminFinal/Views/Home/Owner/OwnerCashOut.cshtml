@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "OwnerCashOut";
+    Layout = "~/Views/Shared/SideNav.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        .btnView {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebarfloat"></div>
+    <div class="centerdiv">
+        <h1>CASH OUT REQUESTS</h1>
+
+        <div class="tbl-header">
+            <table>
+                <thead>
+                    <tr>
+
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>AMOUNT</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            <div id="pagination" class="page-container">
+                <button id="prevBtn" class="prevBtn">Previous Page</button>
+                <button id="currentPage" class="pageNum" value=""></button>
+                <button id="nextBtn" class="nextBtn">Next Page</button>
+            </div>
+        </div>
+        <h4 class="emptyText">No Cash Out Requests</h4>
+
+    </div>
+    <script type="module" src="~/Scripts/myScripts/Owner/OwnerCashOut.js"></script>
+</body>
+</html>
+

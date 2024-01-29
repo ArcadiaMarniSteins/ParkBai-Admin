@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "AdminMain";
+    Layout = "~/Views/Shared/SideNav.cshtml";
+
+}
+<html>
+<head>
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script type="module" src="~/Scripts/myScripts/AdminMain.js"></script>
+    <style>
+        .balbox {
+            width: 500px;
+            height: 100px;
+            pointer-events: none;
+            border-radius: 34px;
+            background: #003459;
+            box-shadow: inset 8px 8px 16px #002138, inset -8px -8px 16px #00477a;
+            border-color: transparent;
+            font-size: 50px;
+            color: #e2c946;
+            text-align: center; 
+            margin-top: 20px;
+            
+        }
+
+        .balanceLbl {
+            color: #e4f4ff;
+            letter-spacing: 5px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        button {
+            background: #003459;
+            box-shadow: 5px 5px 10px #002540, -5px -5px 10px #004372;
+            border-color: transparent;
+            color: #e4f4ff;
+            text-align: center;
+            text-shadow: -2px 3px 9px rgba(0,0,0,0.4);
+            margin: 10px 20px 10px 20px;
+            padding: 10px;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+
+            button:active {
+                box-shadow: inset 10px 10px 20px #002642, inset -10px -10px 20px #004270;
+            }
+
+            button:hover {
+                color: #5aa7cd;
+            }
+
+        .image {
+            width: 15%;
+        }
+        .minitxtbox {
+            background: #003459;
+            box-shadow: inset 8px 8px 16px #002138, inset -8px -8px 16px #00477a;
+            border-color: transparent;
+            color: #e2c946;
+            text-align: center;
+            margin: 10px 20px 10px 20px;
+            pointer-events: none;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebarfloat"></div>
+    <div class="centerdiv">
+        <input type="image" class="image" id="ParkBaiIcon" title="ParkBai Icon" src="" loading="lazy" /><br />
+
+        <input type="text" id="genBal" value="" class="balbox" /><br /><br />
+        <label class="balanceLbl">GENERAL BALANCE</label>
+        <br />
+
+        <input type="text" id="parkBaiBal" value="" class="balbox" /><br /><br />
+        <label class="balanceLbl">PARKBAI BALANCE</label>
+        <br /><br /><br /><br />
+        <input type="text" id="balDriver" value="" class="minitxtbox" />
+        <input type="text" id="balOwner" value="" class="minitxtbox" /><br />
+
+        <button id="btnDriver" >DRIVER</button>
+        <button id="btnOwner">OWNER</button>
+    </div>
+
+</body>
+</html>
+
+
+

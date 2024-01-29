@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - ParkBai Admin</title>
+    @Styles.Render("~/Scripts/MyScripts/SideNav.css")
+
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/myScripts/sideNav.js"></script>
+
+
+</head>
+<body>
+    <div class="area"></div><nav class="main-menu">
+        <ul>
+            <li>
+                <i class="fa  fa-2x"></i>
+                <span class="nav-text">
+                    <label class="navHead">ADMIN DASHBOARD</label>
+                </span>
+            </li>
+
+            <li style="margin:20px 0px 20px 0px">
+
+            </li>
+            <li class="has-subnav">
+                <i class="fa fa-user-circle fa-2x yellow"></i>
+                <span class="nav-text navLbl">
+                    ADMIN
+                </span>
+            </li>
+
+            <li class="nav-item has-subnav">
+                <a href="../Home/AdminMain">
+                    <i class="fa fa-bank fa-2x"></i>
+                    <span class="nav-text">
+                        Balance
+                    </span>
+                </a>
+            </li>
+
+            <li style="margin:40px 0px 40px 0px">
+
+            </li>
+            <li class="has-subnav">
+
+                <i class="fa fa-car fa-2x yellow"></i>
+                <span class="nav-text navLbl">
+                    DRIVER
+                </span>
+            </li>
+
+
+            <li class="has-subnav">
+                <a href="../Home/VehicleApp">
+                    <i class="fa fa-user-plus fa-2x"></i>
+                    <span class="nav-text">
+                        Vehicle Applications
+                    </span>
+                </a>
+            </li>
+
+            <li class="has-subnav">
+                <a href="../Home/DriverList">
+                    <i class="fa fa-list-ul fa-2x"></i>
+                    <span class="nav-text">
+                        Driver List
+                    </span>
+                </a>
+            </li>
+
+            <li class="has-subnav">
+                <a href="../Home/VehicleList">
+                    <i class="fa fa-car  fa-2x"></i>
+                    <span class="nav-text">
+                        Vehicle List
+                    </span>
+                </a>
+            </li>
+            <li style="margin:40px 0px 40px 0px">
+
+            </li>
+
+            <li class="has-subnav">
+                <i class="fa fa-users fa-2x yellow "></i>
+                <span class="nav-text navLbl">
+                    LOT OWNER
+                </span>
+            </li>
+
+            <li class="has-subnav">
+                <a href="../Home/OwnerApp">
+                    <i class="fa fa-user-plus fa-2x"></i>
+                    <span class="nav-text">
+                        Lot Owner Applications
+                    </span>
+                </a>
+            </li>
+
+            <li class="has-subnav">
+                <a href="../Home/ListOwner">
+                    <i class="fa fa-list-ul  fa-2x"></i>
+                    <span class="nav-text">
+                        List of Lot Owners
+                    </span>
+                </a>
+            </li>
+
+            <li class="has-subnav" id="trial">
+                <a href="../Home/OwnerCashOut">
+                    <i class="fa fa-money fa-2x"></i>
+                    <span class="nav-text">
+                        Cash Out
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="logout" id="logout">
+            <li >
+                <a href="">
+                    <i class="fa fa-power-off fa-2x yellow"></i>
+                    <span class="nav-text navLbl">
+                        LOGOUT
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "VehicleAppDet";
+    Layout = "~/Views/Shared/SideNav.cshtml";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+
+    <div class="sidebarfloat"></div>
+    <div class="centerdiv">
+        <h1>DETAILS</h1>
+    </div>
+    <br />
+
+
+
+    <div class="leftdiv">
+        <h2>VEHICLE DETAILS</h2> <br />
+
+        <label class="txtlbl">STATUS: </label>
+        <input type="text" id="txt_app" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">BRAND: </label>
+        <input type="text" id="txt_brand" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">COLOR: </label>
+        <input type="text" id="txt_color" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">MODEL: </label>
+        <input type="text" id="txt_model" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">TYPE: </label>
+        <input type="text" id="txt_type" value="" class="txtbox" /> <br />
+        <br /><br />
+
+        <button id="btn_cor" class="btnDets"> VIEW COR</button>
+        <button id="btn_vehicle" class="btnDets"> VIEW VEHICLE</button>
+
+    </div>
+
+    <div class="rightdiv">
+        <h2>DRIVER DETAILS</h2> <br />
+
+        <label class="txtlbl">NAME: </label>
+        <input type="text" id="txt_name" value="" class="txtbox" /> <br />
+        <label class="txtlbl">ADDRESS: </label>
+        <input type="text" id="txt_add" value="" class="txtbox" /> <br />
+        <label class="txtlbl">EMAIL: </label>
+        <input type="text" id="txt_email" value="" class="txtbox" style="text-transform:none" /> <br />
+        <label class="txtlbl">PHONE NUMBER: </label>
+        <input type="text" id="txt_phone" value="" class="txtbox" /> <br />
+        <label class="txtlbl">ACCOUNT BALANCE: </label>
+        <input type="text" id="txt_bal" value="" class="txtbox" /> <br />
+        <br /><br />
+
+        <button id="btn_license" class="btnDets"> VIEW LICENSE</button>
+        <button id="btn_pic" class="btnDets"> VIEW PICTURE</button>
+    </div>
+    <br />  <br />  <br />
+
+
+    <div class="centerdiv">
+        <br /><br />
+        <button id="btn_accept" class="btn_accept">ACCEPT</button>
+        <button id="btn_reject" class="btn_reject">REJECT</button>
+    </div>
+
+
+
+    <script type="module" src="~/Scripts/myScripts/Driver/VehicleAppDet.js"></script>
+</body>
+

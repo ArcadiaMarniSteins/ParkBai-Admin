@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "VehicleList";
+    Layout = "~/Views/Shared/SideNav.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+   
+
+</head>
+<body>
+    <div class="sidebarfloat"></div>
+    <div class="centerdiv">
+
+        <div class="headercontainer">
+            <h1>LIST OF VEHICLES</h1>
+            <div class="textbox-container">
+                <i class=" bi bi-check-circle-fill" id="StatAcc"></i>
+                <i class=" bi bi-x-circle-fill" id="StatRej"></i>
+                <i class=" bi bi-arrow-clockwise" id="refreshBtn"></i>
+                <input type="text" id="searchTxt" name="searchTxt " class="inputBox" placeholder="Search" />
+                <i class=" bi bi-search" id="searchBtn"></i>
+                <br />
+
+            </div>
+        </div>
+
+        <table id="table">
+            <thead>
+                <tr>                    
+                    <th>PLATE NUMBER</th>
+                    <th>STATUS</th>
+                    <th>DETAILS</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody"></tbody>
+        </table>
+        <div class="noRes"> <h3 id="noResult" value=""></h3></div>
+        
+
+        <div id="pagination" class="page-container">
+            <button id="prevBtn" class="prevBtn">Previous Page</button>
+            <button id="currentPage" class="pageNum" value=""></button>
+            <button id="nextBtn" class="nextBtn">Next Page</button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <script type="module" src="~/Scripts/myScripts/Driver/VehicleList.js"></script>
+</body>
+</html>
+

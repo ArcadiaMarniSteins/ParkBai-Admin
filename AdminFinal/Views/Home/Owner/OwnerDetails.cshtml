@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "OwnerDetails";
+    Layout = "~/Views/Shared/SideNav.cshtml";
+}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+
+    <div class="sidebarfloat"></div>
+    <div class="centerdiv">
+        <h1>DETAILS</h1>
+    </div>
+
+    <div class="leftdiv">
+        <label class="txtlbl">NAME: </label>
+        <input type="text" id="txtName" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">STATUS: </label>
+        <input type="text" id="txtStat" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">EMAIL: </label>
+        <input type="text" id="txtEmail" value="" class="txtbox" style="text-transform:none" /> <br />
+
+        <label class="txtlbl">PHONE: </label>
+        <input type="text" id="txtPhone" value="" class="txtbox" /> <br />
+        <label class="txtlbl">ADDRESS: </label>
+        <input type="text" id="txtAdd" value="" class="txtbox" /> <br />
+
+        <label class="txtlbl">COMPANY: </label>
+        <input type="text" id="txtCom" value="" class="txtbox" /> <br />
+
+
+    </div>
+    <div class="rightdiv">
+
+
+        <button id="btn_bp" class="btnDets">  BUSINESS PERMIT</button><br /><br />
+        <button id="btn_land" class="btnDets"> LAND TITLE</button><br /><br />
+        @*<button id="btn_lot" class="btnDets"> LOT IMAGE</button><br /><br />*@
+    </div>
+
+
+
+    <script type="module" src="~/Scripts/myScripts/Owner/OwnerDetails.js"></script>
+</body>
+
+
+
